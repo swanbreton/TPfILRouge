@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #e3f2fd);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;  /* Centrer horizontalement */
+  align-items: center;      /* Centrer verticalement */
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;  /* Centrer les éléments à l'intérieur de la container */
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;      /* Centrer les items verticalement */
+}
+
+.card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  max-width: 350px;
+  width: 100%;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer les éléments à l'intérieur de la carte */
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1a237e;
+  text-align: center;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.card li {
+  font-size: 1rem;
+  padding: 0.4rem;
+  background: #f5f5f5;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrer l'élément */
+}
+
+.card li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.7rem;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #1e88e5;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  margin-top: 0.5rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+.card div {
+  text-align: center; /* Assurer que l'image et le texte sont centrés */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card div img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+cd
