@@ -1,14 +1,9 @@
-import React from 'react'
-import DoubleTrainer from './DoubleTrainer'
-
+import React from 'react';
+import MyRouter from './router/MyRouter';
 
 const App: React.FC = () => {
-  return (
-    <div>
-      <h1>Dresseur</h1>
-      <DoubleTrainer />
-    </div>
-  )
-}
+  return <MyRouter />;
+};
 
-export default App
+export default App;
+  
