@@ -108,3 +108,23 @@ button:hover {
   margin-bottom: 1rem;
   object-fit: contain;
 }
+
+.gen-selection {
+  margin: 1rem 0;
+}
+
+.gen-button {
+  margin: 5px;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.gen-button.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+

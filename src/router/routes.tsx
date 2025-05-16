@@ -4,19 +4,32 @@ import { RouteObject } from 'react-router-dom';
 // Pages
 import DoubleTrainer from '../pages/DoubleTrainer';
 import ApiTest from '../pages/ApiTest';
+import RootLayout from './RootLayout';
 
 const routes: RouteObject[] = [
   {
     path: '/',
-    element: <DoubleTrainer />,
+    element: (
+      <RootLayout>
+        <DoubleTrainer />
+      </RootLayout>
+    ),
   },
   {
     path: '/trainer',
-    element: <DoubleTrainer />,
+    element: (
+      <RootLayout>
+        <DoubleTrainer />
+      </RootLayout>
+    ),
   },
   {
     path: '/api-test',
-    element: <ApiTest />,
+    element: (
+      <RootLayout>
+        <ApiTest />
+      </RootLayout>
+    ),
   },
 ];
 

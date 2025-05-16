@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -6,7 +7,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <header>
         <h1>Pokémon Trainer App</h1>
         <nav>
-          <a href="/">Home</a> | <a href="/trainer">Trainer</a> | <a href="/api-test">API Test</a>
+          <Link to="/">Home</Link> | <Link to="/trainer">Trainer</Link> | <Link to="/api-test">API Test</Link>
         </nav>
       </header>
       <main>{children}</main>
